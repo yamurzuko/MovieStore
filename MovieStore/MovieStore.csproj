@@ -31,6 +31,11 @@
     <None Remove="Application\MovieOperations\GetMovies\" />
     <None Remove="Application\MovieOperations\UpdateMovie\" />
     <None Remove="FluentValidation" />
+    <None Remove="Application\GenreOperations\" />
+    <None Remove="Application\GenreOperations\GetGenre\" />
+    <None Remove="Application\GenreOperations\CreateGenres\" />
+    <None Remove="Application\GenreOperations\DeleteGenres\" />
+    <None Remove="Application\GenreOperations\UpdateGenres\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -42,5 +47,10 @@
     <Folder Include="Application\MovieOperations\DeleteMovie\" />
     <Folder Include="Application\MovieOperations\GetMovies\" />
     <Folder Include="Application\MovieOperations\UpdateMovie\" />
+    <Folder Include="Application\GenreOperations\" />
+    <Folder Include="Application\GenreOperations\GetGenres\" />
+    <Folder Include="Application\GenreOperations\CreateGenres\" />
+    <Folder Include="Application\GenreOperations\DeleteGenres\" />
+    <Folder Include="Application\GenreOperations\UpdateGenres\" />
   </ItemGroup>
 </Project>
