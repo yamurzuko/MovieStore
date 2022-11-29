@@ -6,16 +6,41 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'BookStore' " />
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Controllers\" />
-    <None Remove="Entity\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="DbOperations\" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Common\" />
+    <None Remove="Application\" />
+    <None Remove="Application\MovieOperations\" />
+    <None Remove="Application\MovieOperations\CreateMovie\" />
+    <None Remove="Application\MovieOperations\DeleteMovie\" />
+    <None Remove="Application\MovieOperations\GetMovies\" />
+    <None Remove="Application\MovieOperations\UpdateMovie\" />
+    <None Remove="FluentValidation" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Entity\" />
+    <Folder Include="DbOperations\" />
+    <Folder Include="Common\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\MovieOperations\" />
+    <Folder Include="Application\MovieOperations\CreateMovie\" />
+    <Folder Include="Application\MovieOperations\DeleteMovie\" />
+    <Folder Include="Application\MovieOperations\GetMovies\" />
+    <Folder Include="Application\MovieOperations\UpdateMovie\" />
   </ItemGroup>
 </Project>
